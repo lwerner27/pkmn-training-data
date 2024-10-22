@@ -120,12 +120,11 @@
 
 		response = await response.json();
 
+		alert(response.msg);
+
 		if (response.status !== 201) {
-			alert('Encountered internal error.');
 			return;
 		}
-
-		alert(response.msg);
 
 		searchPokmeon = '';
 
